@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
-import {FaBars, FaTimes} from 'react-icons/fa';
+import {FaBars, FaTimes, FaLinkedin, FaGithub, FaFileAlt} from 'react-icons/fa';
+import {HiOutlineMail} from 'react-icons/hi';
 function Navbar(props) {
     const [showNav, setShowNav] = useState(false);
 
@@ -13,7 +14,7 @@ function Navbar(props) {
                     <li>Skills</li>
                     <li>Work</li>
                     <li>Contact</li>
-                    <li>Resume</li>
+                   
                 </ul>
         
 
@@ -29,8 +30,34 @@ function Navbar(props) {
                     <li className='py-6 text-4xl'>Skills</li>
                     <li className='py-6 text-4xl'>Work</li>
                     <li className='py-6 text-4xl'>Contact</li>
-                    <li className='py-6 text-4xl'><button>Resume</button></li>
+                   
                 </ul>
+
+                {/* Social icons */}
+                <div className='flex fixed flex-col top-[35%] left-0 items-center'>
+                    <ul>
+                        <li className='w-[160px] h-[60px] flex justify-between items-center ml-[-100px] hover:ml-[-10px] duration-300 bg-blue-500'>
+                            <a className='flex justify-between items-center w-full' href='/'>
+                                LinkedIn<FaLinkedin size={30}/>
+                            </a>
+                        </li>
+                        <li className='w-[160px] h-[60px] flex justify-between items-center ml-[-100px] hover:ml-[-10px] duration-300 bg-[#333333]'>
+                            <a className='flex justify-between items-center w-full' href='/'>
+                                Github<FaGithub size={30}/>
+                            </a>
+                        </li>
+                        <li className='w-[160px] h-[60px] flex justify-between items-center ml-[-100px] hover:ml-[-10px] duration-300 bg-[#6fc2b0]'>
+                            <a className='flex justify-between items-center w-full' href='/'>
+                                Email<HiOutlineMail size={30}/>
+                            </a>
+                        </li>
+                        <li className='w-[160px] h-[60px] flex justify-between items-center ml-[-100px] hover:ml-[-10px] duration-300 bg-[#565f69]'>
+                            <a className='flex justify-between items-center w-full' href='/'>
+                                Resume<FaFileAlt size={30}/>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
         </div>
     );
 }
