@@ -1,0 +1,31 @@
+
+buttonEl{
+  display: block;
+  width: 200px;
+  height: 40px;
+  line-height: 40px;
+  font-size: 18px;
+  text-decoration: none;
+  letter-spacing: 2px;
+  text-align: center;
+
+  transition: all .35s;
+  color: white;
+}
+
+buttonEl:after{
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 100%;
+  background: rgb(219, 39, 119);
+  transition: all .35s;
+  color: white;
+}
+
+buttonEl:hover:after{
+  width: 100%;
+  color: white;
+}
