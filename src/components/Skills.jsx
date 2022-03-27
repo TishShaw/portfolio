@@ -16,7 +16,7 @@ function Skills(props) {
             <div className='max-w-[1000px] mx-auto p-4 flex flex-col justify-center w-full h-full'>
                 <div>
                     <Slide direction='left' triggerOnce>
-                        <p className='text-4xl font-bold inline border-b-4 border-pink-600 mt-10'>Skills</p>
+                        <p className='text-4xl font-bold inline border-b-4 border-pink-600 mt-10 text-amber-900'>Skills</p>
                     </Slide>
                     <Fade delay={1000} triggerOnce>
                         <p className='py-4'>Technologies i've worked with</p>
