@@ -22,6 +22,7 @@ function Navbar(props) {
                     <li><Link to='skills' smooth={true} duration={500}>Skills</Link></li>
                     <li><Link to='work' smooth={true} duration={500}>Work</Link></li>
                     <li><Link to='contact' smooth={true} duration={500}>Contact</Link></li>
+
                    
                 </ul>
         
@@ -38,6 +39,10 @@ function Navbar(props) {
                     <li className='py-6 text-4xl'><Link onClick={handleClick} to='skills' smooth={true} duration={500}>Skills</Link></li>
                     <li className='py-6 text-4xl'><Link onClick={handleClick} to='work' smooth={true} duration={500}>Work</Link></li>
                     <li className='py-6 text-4xl'><Link onClick={handleClick}  to='contact' smooth={true} duration={500}>Contact</Link></li>
+                    <li className='py-6 text-4xl'><a className='flex justify-between items-center w-full'href={pdf}target='_blank' rel="noreferrer">
+                                Resume<FaFileAlt size={30}/>
+                            </a>
+                        </li>
                    
                 </ul>
 

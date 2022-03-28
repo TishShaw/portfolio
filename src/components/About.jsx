@@ -15,12 +15,12 @@ function About(props) {
                     </div>
                 
                     <div className='max-w-[1000px] w-full grid sm:grid-cols-2 gap-8 px-4 fade-in-left'>
-                        <Slide duration={5000} triggerOnce>
+                        <Slide duration={3000} triggerOnce>
                             <div className='sm:text-right text-4xl font-bold'>
                                 <p className=''>Hi. I'm Tish, pleasure  to meet you! Please take a look around.</p>
                             </div>
                         </Slide>
-                        <Slide duration={5000} direction='right' triggerOnce>
+                        <Slide duration={3000} direction='right' triggerOnce>
                             <div>
                                 <p>I am passionate about building exceptional software that improves the lives of those around me. I specialize in creating web applications for clients.</p>
                                 <br />

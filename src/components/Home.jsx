@@ -1,6 +1,7 @@
 import React from 'react';
 import {HiArrowNarrowRight} from 'react-icons/hi';
 import { Fade, Slide } from "react-awesome-reveal";
+import { Link } from 'react-scroll';
 
 
 function Home(props) {
@@ -23,7 +24,7 @@ function Home(props) {
                 <Slide delay={4000} triggerOnce>
                     
                     <div>
-                        <button className='text-pink-600 border-2 px-6 py-3 my-3 inline-flex items-center  hover:bg-pink-600 hover:border-b-pink-600 hover:text-white-600 font-semibold rounded '>View Work <HiArrowNarrowRight className='ml-3 buttonEl'/></button>
+                        <Link to='contact' ><button className='text-pink-600 border-4 px-6 py-3 my-3 inline-flex items-center  hover:bg-pink-600 hover:text-white font-semibold rounded '>Hire Me <HiArrowNarrowRight className='ml-3 buttonEl'/></button></Link>
                     </div>
                </Slide>
             </div>

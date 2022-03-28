@@ -19,7 +19,7 @@ function Skills(props) {
                         <p className='text-4xl font-bold inline border-b-4 border-pink-600 mt-10 text-amber-900'>Skills</p>
                     </Slide>
                     <Fade delay={1000} triggerOnce>
-                        <p className='py-4'>Technologies i've worked with</p>
+                        <p className='py-4'>// Technologies i've worked with</p>
                     </Fade>
                 </div>
                 
