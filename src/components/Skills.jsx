@@ -24,7 +24,7 @@ function Skills(props) {
                 </div>
                 
                     <div className='w-full grid grid-cols-2 sm:grid-cols-4 gap-4 text-center py-8'>
-                        <Fade cascade delay={2000} triggerOnce>
+                        <Fade cascade delay={1030} triggerOnce>
                         <div className='shadow-md hover:scale-110 duration-500'>
                             <img className='w-20 mx-auto' src={HTML} alt='HTML icon' />
                             <p className='my-4'>HTML</p>
