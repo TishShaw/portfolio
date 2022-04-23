@@ -5,11 +5,11 @@ function Contact(props) {
     return (
        <div name='contact' className='w-full flex justify-center items-center p-4'>
         <form method='POST' action="https://getform.io/f/c6b09432-7b2f-45da-98f5-59cdaef6dc0c" className='flex flex-col max-w-[600px] w-full'>
-            <div className='pb-8 mt-10'>
+            <div className='pb-8 mt-10 flex flex-col items-center'>
                 <Slide direction='down'>
                     <p className='text-4xl font-bold inline border-b-4 border-pink-600 text-amber-900'>Contact</p>
                 </Slide>
-                <p className='text-gray-400 py-4'>// Submit the form below or shoot me an email - Tishtanya.Shaw24@gmail.com</p>
+                <p className='text-gray-400 py-4'>// Please submit the form below or shoot me an email - Tishtanya.Shaw24@gmail.com</p>
             </div>
           
                 

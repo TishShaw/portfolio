@@ -11,39 +11,35 @@ function Navbar(props) {
     const handleClick = () => setShowNav(!showNav);
 
     return (
-        <div className='fixed w-full h-[80px] flex justify-between items-center px-4 bg-[#f4a261] text-gray-200 z-[1]'>
+        <div className='fixed w-full h-[80px] flex justify-between items-center px-4 text-gray-200 z-[1]'>
                 <div>
-                    <img src={Logo} alt='Logo image' style={{width: '200px', marginLeft: '-40px'}} />
+                    <img src={Logo} alt='LogoImage' style={{width: '200px', marginLeft: '-40px'}} />
                 </div>   
-
                 <ul className='hidden md:flex'>
                     <li><Link to='home' smooth={true} duration={500}>Home</Link></li>
                     <li><Link to='about' smooth={true} duration={500}>About</Link></li>
                     <li><Link to='skills' smooth={true} duration={500}>Skills</Link></li>
                     <li><Link to='work' smooth={true} duration={500}>Work</Link></li>
-                    <li><Link to='contact' smooth={true} duration={500}>Contact</Link></li>
-
-                   
+                    <li><Link to='contact' smooth={true} duration={500}>Contact</Link></li>       
                 </ul>
-        
 
             {/* Hamburger */}
-            <div className='md:hidden z-10' onClick={handleClick}>
+            <div className='md:hidden z-10 text-3xl' onClick={handleClick}>
                 { !showNav? <FaBars /> : <FaTimes />}
             </div>
 
             {/* Mobile menu */}
-                <ul className={!showNav ? 'hidden':'absolute top-0 left-0 h-screen bg-[#f4a261] flex flex-col justify-center items-center w-full'}>
+                <ul className={!showNav ? 'hidden':'absolute top-0 left-0 h-screen bg-[#8e5d35] flex flex-col justify-center items-center w-full'}>
                     <li className='py-6 text-4xl'><Link onClick={handleClick} to='home' smooth={true} duration={500}>Home</Link></li>
                     <li className='py-6 text-4xl'><Link onClick={handleClick} to='about' smooth={true} duration={500}>About</Link></li>
                     <li className='py-6 text-4xl'><Link onClick={handleClick} to='skills' smooth={true} duration={500}>Skills</Link></li>
                     <li className='py-6 text-4xl'><Link onClick={handleClick} to='work' smooth={true} duration={500}>Work</Link></li>
                     <li className='py-6 text-4xl'><Link onClick={handleClick}  to='contact' smooth={true} duration={500}>Contact</Link></li>
-                    <li className='py-6 text-4xl'><a className='flex justify-between items-center w-full'href={pdf}target='_blank' rel="noreferrer">
+                    <li className='py-6 text-4xl'>
+                        <a className='flex justify-between items-center w-full'href={pdf}target='_blank' rel="noreferrer">
                                 Resume<FaFileAlt size={30}/>
-                            </a>
-                        </li>
-                   
+                        </a>
+                    </li>
                 </ul>
 
                 {/* Social icons */}

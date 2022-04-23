@@ -1,7 +1,7 @@
 import React from 'react';
 import KB from '../assets/Projects/keitabeauty.png';
 import PH from '../assets/Projects/planthaven.png';
-import EH from '../assets/Projects/empirehomes.png';
+import EH from '../assets/Projects/empirehome.png';
 import Tilt from 'react-parallax-tilt';
 import { Fade, Slide } from "react-awesome-reveal";
 
@@ -10,15 +10,15 @@ function Work(props) {
         <div name='work' className='w-full text-gray-400'>
             
             <div className='max-w-[1000px] mx-auto p-4 flex flex-col justify-center w-full my-7'>
-                <div className='pb-8 mt-10'>
+                <div className='pb-8 mt-10 flex flex-col items-center'>
                     <Fade duration={3000} triggerOnce>
                         <p className='text-4xl font-bold inline border-b-4  text-amber-900 border-pink-600'>
-                            Work
+                            Projects
                         </p>
                     </Fade>
                     <Fade duration={3000} triggerOnce>
                         <p className='py-6 items-center'>
-                            // Check out some of my recent work
+                            // Check out some of my recent projects
                         </p>
                     </Fade>
                 </div>
