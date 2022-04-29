@@ -1,7 +1,7 @@
 import React from 'react';
 import { Slide } from "react-awesome-reveal";
-import FlowerAni from './FlowerAni';
-import pdf from '../assets/Tishtanya-Shaw-resume.pdf';
+import FlowerAni from './Flower/FlowerAni';
+import pdf from '../assets/Tishtanya-Shaw-resume.docx.pdf';
 
 function About(props) {
     return (
@@ -26,7 +26,7 @@ function About(props) {
                                     Tishtanya. I'm a web developer from Maryland. I'm passionate about technology and I love creating innovative and performant applications that make people's lives easier. I find learning new technologies and creating solutions to difficult problems massively rewarding. 
                                 </p>
                                 <br />
-                                <p>At the moment, i'm building a web application for a client utlizing MERN and firebase. Also, i'm currently learning data structures and algorithms that can improve the effiency and optimization of computer programs. </p>
+                                <p>At the moment, i'm building a web application for a client utlizing MERN and firebase web services. Also, i'm currently learning data structures and algorithms that can improve the effiency and optimization of computer programs. </p>
                                 <div className='flex items-center justify-center'><button className='items-center my-12  from-purple-50 text-pink-600 border-4 px-16 py-2'><a href={pdf}target='_blank' rel="noreferrer">
                                 Resume
                             </a></button></div>

@@ -1,93 +1,75 @@
-import React from 'react';
-import KB from '../assets/Projects/keitabeauty.png';
-import PH from '../assets/Projects/planthaven.png';
-import EH from '../assets/Projects/empirehome.png';
+import React, { useState, useEffect } from 'react';
 import Tilt from 'react-parallax-tilt';
-import { Fade, Slide } from "react-awesome-reveal";
+import { Fade } from "react-awesome-reveal";
+import {BiRightArrow, BiLeftArrow} from 'react-icons/bi';
+import {ProjectData} from '../data/Data';
 
-function Work(props) {
+function Work() {
+    const [currentSlide, setCurrentSlide] = useState(0);
+    const length = ProjectData.length;
+    
+    useEffect(() => {
+
+    },[])
+
+    const nextSlide = () => {
+        setCurrentSlide(currentSlide === length - 1 ? 0 : currentSlide + 1)
+    }
+
+    const prevSlide = () => {
+        setCurrentSlide(currentSlide === 0 ? length - 1 : currentSlide - 1)
+    }
+
     return (
-        <div name='work' className='w-full text-gray-400'>
+        <div name='work' className='w-full h-full text-gray-400 m-auto justify-center align-center'>
             
             <div className='max-w-[1000px] mx-auto p-4 flex flex-col justify-center w-full my-7'>
-                <div className='pb-8 mt-10 flex flex-col items-center'>
+                <div className=' pb-20 flex flex-col items-center'>
                     <Fade duration={3000} triggerOnce>
                         <p className='text-4xl font-bold inline border-b-4  text-amber-900 border-pink-600'>
                             Projects
                         </p>
                     </Fade>
                     <Fade duration={3000} triggerOnce>
-                        <p className='py-6 items-center'>
-                            // Check out some of my recent projects
+                        <p className='pt-6 items-center'>
+                            //Check out some of my recent projects
                         </p>
                     </Fade>
                 </div>
-
-                {/* Container */}          
-                    <div className='grid sm:grid-cols-2  gap-4 mb-10'>
-                        
-                            <div className='sm:text-right '>
-                                <Slide triggerOnce>
-                                    <div className='w-600 text-base'>
-                                        <h1 className='text-amber-900 text-2xl text-left font-bold tracking-wider animate__fadeInLeft mb-5'>Keita Beauty Ecommerce Store</h1>
-                                        <p className='text-left'>Keita's Beauty is an online E-commerce Website where you can purchase your favorite make-up products for a reasonable price. Redux state management is used to handle cart functionality.</p>
-                                    </div>
-                                <div className='flex my-6'>
-                                    <button className='relative inline-flex items-center justify-center p-0.5 mb-2 mr-2 overflow-hidden text-sm hover:bg-pink-600 hover:text-white text-pink-600 font-semibold py-2 px-4 border border-pink-400 rounded shadow'><a href='http://keita-beauty-frontend.vercel.app/' target='_blank' rel="noreferrer">View Live</a></button>
-                                    <button className='relative inline-flex items-center justify-center p-0.5 mb-2 mr-2 overflow-hidden text-sm font-medium hover:border-b-pink-600 '><a href='https://github.com/TishShaw/KeitaBeauty-frontend' target='_blank' className='hover:text-pink-600' rel="noreferrer">Source Code</a></button>
-                                </div>
-                                </Slide>
-                            
-                            </div>
-                                <Slide duration={4000}  direction='right' triggerOnce>
-                                <div className='flex w-full my-4 shadow-xl'>
-                                   <Tilt className='Tilt scale-x-125'><img className='w-full Tilt-inner' src={KB} alt='project-img' width='1000rem' height='1000rem' /></Tilt>
-                                </div>
-                                </Slide>
-                            </div>
-                        
-                    <div className='grid sm:grid-cols-2  gap-4 mb-10'>
-                        
-                            <div className='sm:text-right '>
-                                <Slide triggerOnce>
-                                    <div className='w-600 text-base'>
-                                        <h1 className='text-amber-900 text-2xl text-left font-bold tracking-wider animate__fadeInLeft mb-5'>Plant Haven</h1>
-                                        <p className='text-left'>House Plant Heaven is an app where you can find a variety of indoor plants. You can expand your knowledge about different varieties, choose plants based on your specific needs, find distributers, and save your plant crushes to a favorites list. This project was created using React, CSS, HTML, JavaScript, Node.js, Express, MongoDB, Mongoose, Heroku, and Netlify.</p>
-                                    </div>
-                                <div className='flex my-6'>
-                                    <button className='relative inline-flex items-center justify-center p-0.5 mb-2 mr-2 overflow-hidden text-sm hover:bg-pink-600 hover:text-white text-pink-600 font-semibold py-2 px-4 border border-pink-400 rounded shadow'><a href='https://plant-haven.netlify.app/' target='_blank' rel="noreferrer">View Live</a></button>
-                                    <button className='relative inline-flex items-center justify-center p-0.5 mb-2 mr-2 overflow-hidden text-sm font-medium '><a className='hover:text-pink-600' href='https://github.com/seir-1115-p3-squad6/project3' target='_blank' rel="noreferrer">Source Code</a></button>
-                                </div>
-                                </Slide>
-                            
-                            </div>
-                                <Slide duration={4000} direction='right' triggerOnce>
-                                <div className='flex w-full my-4 shadow-xl'>
-                                   <Tilt className='Tilt scale-x-125'><img className='w-full Tilt-inner' src={PH} alt='project-img' width='1000rem' height='1000rem' /></Tilt>
-                                </div>
-                                </Slide>
-                            </div>
-                    <div className='grid sm:grid-cols-2  gap-4 mb-10'>
-                        
-                            <div className='sm:text-right '>
-                                <Slide triggerOnce>
-                                    <div className='w-600 text-base'>
-                                        <h1 className='text-amber-900 text-2xl text-left font-bold tracking-wider animate__fadeInLeft mb-5'>Empire Home Real Estate</h1>
-                                        <p className='text-left'>Empire Homes is a real estate listing website for homebuyers looking to purchase a new home. Users can make filtered searches in any city they are looking to relocate and save property listings that are actively for sale on the market. In the future, I would like to add a messaging platform so users will be able to send messages and request appointments in the app.</p>
-                                    </div>
-                                <div className='flex my-6'>
-                                    <button className='relative inline-flex items-center justify-center p-0.5 mb-2 mr-2 overflow-hidden text-sm hover:bg-pink-600 hover:text-white text-pink-600 font-semibold py-2 px-4 border border-pink-400 rounded shadow'><a href='https://empirehomes.netlify.app/' target='_blank' rel="noreferrer">View Live</a></button>
-                                    <button className='relative inline-flex items-center justify-center p-0.5 mb-2 mr-2 overflow-hidden text-sm font-medium'><a className='hover:text-pink-600' href='https://github.com/TishShaw/empire-homes' target='_blank' rel="noreferrer">Source Code</a></button>
-                                </div>
-                                </Slide>
-                            
-                            </div>
-                                <Slide duration={4000} direction='right' triggerOnce>
-                                <div className='flex w-full my-4 shadow-xl'>
-                                   <Tilt className='Tilt scale-x-125'><img className='w-full Tilt-inner' src={EH} alt='project-img' width='1000rem' height='1000rem' /></Tilt>
-                                </div>
-                                </Slide>
-                            </div>
+                 <div className="flex justify-center align-center overflow-hidden w-full ">
+                     {ProjectData.map((project, index) => (
+                      <div className='flex text-center justify-center items-center m-auto sm:scroll-smooth sm:overflow-scroll ' key={index}>
+                          {
+                              index === currentSlide && (
+                                  <>
+                                      <BiLeftArrow style={{fontSize: '300px', marginRight: '130px'}} onClick={prevSlide}/>
+                                       <div className="flex flex-col relative aspect-w-16 aspect-h-9">
+                                        <div className='flex w-full mt-4 shadow-l relative select-none '>
+                                            <Tilt className='Tilt scale-x-100'>
+                                            <img className='w-full Tilt-inner' src={project.image} alt='project-img' width='1000em' />
+                                            </Tilt>
+                                            </div>
+                                            <div  className='flex my-10'>
+                                                {
+                                                    project.tools.map((tool) => (
+                                                    <>
+                                                        <img className='w-12 mx-auto ' src={tool} alt='project tools' />
+                                                    </>
+                                                    ))
+                                                }
+                                            </div>
+                                            <div className='w-600 text-base'>
+                                                <h1 className='text-amber-900 text-2xl text-left font-bold tracking-wider animate__fadeInLeft mb-5'>{project.title}</h1>
+                                                    <p className='text-left text-xl w-300 '>{project.desc}</p>
+                                            </div>
+                                        </div>
+                                        <BiRightArrow style={{fontSize: '300px', marginLeft: '130px'}}  onClick={nextSlide}/>
+                            )
+                                  </>
+                        )}
+                      </div>
+                     ))}
+                 </div>
                 <br/>
             </div>
         </div>

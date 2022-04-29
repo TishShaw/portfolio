@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import Logo from '../assets/images/icon.png';
-import pdf from '../assets/Tishtanya-Shaw-resume.pdf';
+import pdf from '../assets/Tishtanya-Shaw-resume.docx.pdf';
 import {FaBars, FaTimes, FaLinkedin, FaGithub, FaFileAlt} from 'react-icons/fa';
 import {HiOutlineMail} from 'react-icons/hi';
 import { Link } from 'react-scroll';

@@ -9,7 +9,7 @@ function Footer(props) {
 	let year = date.getFullYear();
 
     return (
-        <div className='w-full text-pink-600 text-center flex justify-center items-center'>
+        <div className='w-full text-pink-600 text-center flex justify-center items-center bg-[#bb7f19] bottom-0'>
             <hr />
             <div className='flex justify-center flex-col'>
                 <ul className='md:hidden flex justify-start items-center text-center p-5 '>
