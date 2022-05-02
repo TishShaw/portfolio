@@ -20,19 +20,25 @@ export const ProjectData = [
 	{
 		title: "Keita's Beauty",
 		image: KB,
-		tools:[ HTML, CSS, JS, REACT, REDUX, POSTGRES, AWS],
+		tools: [HTML, CSS, JS, REACT, REDUX, POSTGRES, AWS],
 		desc: "Keita's Beauty is an online E-commerce Website where you can purchase your favorite make-up products for a reasonable price. Redux state management is used to handle cart functionality.",
+		github: 'https://github.com/TishShaw/KeitaBeauty-frontend',
+		live: 'https://keita-beauty-frontend.vercel.app/',
 	},
 	{
 		title: 'Plant Haven',
 		image: PH,
-		tools: [HTML, CSS, JS, REACT,  NODE, EX,MONGO,],
+		tools: [HTML, CSS, JS, REACT, NODE, EX, MONGO],
 		desc: 'House Plant Heaven is an app where you can find a variety of indoor plants. You can expand your knowledge about different varieties, choose plants based on your specific needs, find distributers, and save your plant crushes to a favorites list. This project was created using React, CSS, HTML, JavaScript, Node.js, Express, MongoDB, Mongoose, and deployed with Heroku and Netlify.',
+		github: 'https://github.com/seir-1115-p3-squad6/project3',
+		live: 'https://plant-haven.netlify.app/',
 	},
 	{
 		title: 'Empire Homes',
 		image: EH,
 		tools: [HTML, CSS, JS, REACT],
 		desc: 'Empire Homes is a real estate listing website for homebuyers looking to purchase a new home. Users can make filtered searches in any city they are looking to relocate and save property listings that are actively for sale on the market. In the future, I would like to add a messaging platform so users will be able to send messages and request appointments in the app.',
+		github: 'https://github.com/TishShaw/empire-homes',
+		live: 'https://empirehomes.netlify.app/',
 	},
 ];
