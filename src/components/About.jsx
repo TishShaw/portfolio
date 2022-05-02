@@ -5,7 +5,7 @@ import pdf from '../assets/Tishtanya-Shaw-resume.docx.pdf';
 
 function About(props) {
     return (
-        <div name='about' className='w-full h-screen items-center text-gray-400'>
+        <div name='about' className='w-full sm:h-screen h-full items-center text-gray-400 p-4'>
             <div className='flex flex-col justify-center items-center w-full h-full'>
                 <div className='flex items-center justify-center flex-col pb-8 pl-4'>
                         <Slide direction="down" duration={3000} triggerOnce>

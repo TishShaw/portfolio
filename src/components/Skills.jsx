@@ -14,9 +14,9 @@ import { Fade, Slide } from "react-awesome-reveal";
 
 function Skills(props) {
     return (
-        <div name='skills' className='w-full h-screen items-center text-gray-400 my-20 bg-[#bb7f19]'>
+        <div name='skills' className='w-full sm:h-screen h-full items-center text-gray-400 my-20 p-4 bg-[#bb7f19]'>
             {/* Container */}
-            <div className='max-w-[1000px] mx-auto p-4 flex flex-col justify-center w-full h-full'>
+            <div className='max-w-[1000px] mx-auto  flex flex-col justify-center w-full h-full'>
                 <div className='flex flex-col items-center'>
                     <Slide direction='left' triggerOnce>
                         <p className='text-4xl font-bold inline border-b-4 border-pink-600 mt-10 text-amber-900'>Skills</p>
